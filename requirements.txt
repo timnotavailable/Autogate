@@ -1,0 +1,44 @@
+# -- Machine Learning & Scientific Computing --
+
+# TensorFlow (includes GPU support by default)
+tensorflow
+
+# PyTorch 
+--extra-index-url https://download.pytorch.org/whl/cu129
+torch
+torchvision
+torchaudio
+
+# Core Scientific Libraries (Pandas, Scikit-learn)
+pandas
+scikit-learn
+matplotlib
+tensorboard
+
+# -- JAX with CUDA 12 support --
+# Tells the installer where to find CUDA-enabled JAX builds
+jax[cuda12]
+
+# JAX Ecosystem
+equinox
+diffrax
+optax
+optimistix
+paramax
+jaxtyping
+
+# -- MRI & Signal Processing --
+twixtools
+pypulseq
+pydicom
+
+# -- Jupyter Environment --
+jupyterlab
+ipywidgets
+notebook
+ipykernel
+
+# -- Other Utilities --
+joblib
+tqdm
+typeguard
