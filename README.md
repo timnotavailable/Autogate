@@ -283,7 +283,7 @@ numpy_to_dicom(
 
 ## Technical Specifications
 
-- **MRI Scanner Compatibility**: Siemens 1.5T / 3T platforms (tested on VE12U, compatible with pre-XA and XA platforms).
+- **MRI Scanner Compatibility**: Siemens platforms (tested on VE12U, compatible with pre-XA and XA platforms).
 - **Supported Pulse Sequences**: Cardiovascular Cine (`CV`), Gradient Echo (`a_gre`), Balanced Steady-State Free Precession (`trufi`).
 - **Navigator Signal**: Ultra-short FID center readout (10 samples, $2\times$ oversampled), `PHASCOR` MDH flag.
 - **Deep Learning Frameworks**: PyTorch (default notebook / batch pipelines) and JAX (available in `utils/gating.py`).
