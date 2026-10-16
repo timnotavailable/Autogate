@@ -17,9 +17,9 @@ By integrating custom Siemens pulse sequences, frequency-constrained neural auto
 - **Intrinsic Navigator Acquisition**: Seamlessly integrates with customized Siemens GRE (`a_gre`), bSSFP (`trufi`), and Cardiovascular Cine (`CV`) pulse sequences using ultra-short ADC readouts tagged with the `PHASCOR` flag in the Measurement Data Header (MDH).
 - **Frequency-Constrained Autoencoders**: Employs weight-tied Autoencoders (AE) and Variational Autoencoders (VAE) with Fourier-domain bandpass constraints or spectral overlap penalties to disentangle baseline drift (<0.1 Hz), respiration (0.1–0.7 Hz), cardiac motion (0.7–2.0 Hz), and high-frequency harmonics (>2.0 Hz).
 - **Fast & Deterministic Optimization**: Utilizes second-order L-BFGS optimization with strong Wolfe line-search conditions, converging in 10–30 epochs (<1 second) with deterministic gating points.
-- **Siemens PMU Cross-Validation**: Native parser for Siemens Physiological Measurement Unit (PMU) logs (VE12U platform), validating self-gated triggers against hardware `ECG1`–`ECG4` and `EXT1` (Acoustic Cardiac Triggering / ACT) channels at sub-millisecond precision.
+- **Siemens PMU Cross-Validation**: Native parser for Siemens Physiological Measurement Unit (PMU) logs (VE12U platform), validating self-gated triggers against hardware `ECG1`–`ECG4` and `EXT1` (Acoustic Cardiac Triggering / ACT) channels at 400Hz(PMU saving rates).
 - **Robust K-Space Binning & Interpolation**: Maps acquired k-space lines into discrete or continuously interpolated cardiac phases (e.g., 30 cardiac phases) with asymmetric echo and oversampling support.
-- **BART-Powered Parallel Imaging & Compressed Sensing**: Supports coil noise whitening, readout oversampling removal, ESPIRiT sensitivity map estimation, and $L_2$-regularized PICS reconstruction.
+- **BART-Powered Parallel Imaging **: Supports coil noise whitening, readout oversampling removal, ESPIRiT sensitivity map estimation, and $L_2$-regularized PICS reconstruction.
 - **Clinical DICOM Export**: Converts 3D cine arrays back into calibrated DICOM series, computing `RescaleSlope`, `RescaleIntercept`, and window centers/widths to match clinical PACS viewers.
 - **Containerized Environment**: Includes a turnkey `.devcontainer` with Ubuntu 24.04, CUDA 12.9, GPU-accelerated BART compiled from source, and Python 3.13.
 
