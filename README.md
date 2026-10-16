@@ -118,7 +118,7 @@ During breath-hold scans, subtle movement or ventilator drift can introduce slow
   ```
 
 ### Step 3: Dimensionality Reduction via Weight-Tied Autoencoders
-The multi-coil navigator signals (e.g., 18 or 30 channels) are compressed into lower-dimensional physiological latent representations:
+The multi-coil navigator signals (e.g., 16 or 32 channels) are compressed into lower-dimensional physiological latent representations:
 - **Optimizer**: L-BFGS with Wolfe line-search conditions.
 - **Speed**: Converges within 10–30 epochs in approximately 1 second on GPU.
 - **Deterministic**: The ratio of temporal points (e.g., 2,414) to parameters (380) ensures high stability across runs.
