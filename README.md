@@ -8,7 +8,7 @@
 
 **AutoGate** is a self-gating and image reconstruction framework for **Cardiac Magnetic Resonance (CMR)** imaging. It extracts physiological motion dynamics directly from intrinsic MR navigator readouts, eliminating the strict requirement for external electrocardiogram (ECG) leads or acoustic cardiac triggering (ACT) sensors during cine acquisitions.
 
-By integrating custom Siemens pulse sequences, frequency-constrained neural autoencoders, multi-channel physiological measurement unit (PMU) cross-validation, and compressed sensing parallel imaging via **BART**, AutoGate provides a robust end-to-end pipeline from raw `.dat` scanner files to clinical-grade DICOM cine series.
+By integrating custom Siemens pulse sequences, frequency-constrained neural autoencoders, multi-channel physiological measurement unit (PMU) cross-validation, and reconstruction via **BART**, AutoGate provides a robust end-to-end pipeline from raw `.dat` scanner files to clinical-grade DICOM cine series.
 
 ---
 
