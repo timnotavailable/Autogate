@@ -50,7 +50,7 @@ flowchart TD
         J --> K["Readout Oversampling Removal (GPU/CPU)"]
         K --> L["Coil Noise Whitening"]
         L --> M["ESPIRiT Sensitivity Map Estimation (ecalib)"]
-        M --> N["Regularized PICS Compressed Sensing Recon"]
+        M --> N["Regularized PICS  Recon"]
     end
     
     N --> O["Animated Cine Movie (MP4 / Array)"]
